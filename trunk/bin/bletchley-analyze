@@ -6,7 +6,9 @@
 Simple script to leverage some of the blobtools features
 
 Copyright (C) 2011-2012 Virtual Security Research, LLC
-Author: Timothy D. Morgan
+
+Original Author: Timothy D. Morgan
+Current Author (2020): Greg M. Alfaro
 
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU Lesser General Public License, version 3,
@@ -68,7 +70,7 @@ def terminalHighlightedString(code, s):
         return s
 
     if options.C:
-        return "\x1b[7m%s\x1b[0m" % s        
+        return "\x1b[7m%s\x1b[0m" % s
     elif options.c:
         fg = code%6+31
         bg = (code^0xffffffff)%6+41
@@ -79,7 +81,7 @@ def terminalHighlightedString(code, s):
         return "\x1b[0;38;05;%d;48;05;%dm%s\x1b[0m" % (fg,bg,s)
 
 
-def printColoredHexDump(blobs, group_size=8):    
+def printColoredHexDump(blobs, group_size=8):
     line_size = 64
     group_size *= 2 # two hex digits per byte
     hex_blobs = [binascii.b2a_hex(b) for b in blobs]
@@ -87,7 +89,7 @@ def printColoredHexDump(blobs, group_size=8):
 
     for k in range(0,len(hex_blobs)):
         hex = hex_blobs[k].decode()
-        
+
         for i in range(0,len(hex),line_size):
             line = '%.4X: ' % i
 
@@ -97,11 +99,11 @@ def printColoredHexDump(blobs, group_size=8):
             for j in range(0,line_size,group_size):
                 group = hex[i+j:i+j+group_size]
                 line += terminalHighlightedString(color_map.get(group.encode('utf-8'),
-                                                                None), group) + ' ' 
-       
+                                                                None), group) + ' '
+
             line += '| '
             line += repr(blobs[k][i//2:(i+line_size)//2])
-        
+
             print(line)
         print('')
 
