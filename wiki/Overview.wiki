@@ -1,7 +1,3 @@
-<p>
-Here you will find a brief overview of the tools and libraries provided by Bletchley.  For further details, see the individual tool usage statements, pydoc documentation, and of course the <a href="https://code.blindspotsecurity.com/trac/bletchley/browser">source code</a>.
-</p>
-
 <h1>Installation</h1>
 <p>
 See: <a href="/trac/bletchley/browser/trunk/INSTALL">INSTALL</a>
@@ -57,7 +53,7 @@ meU8SyxVHE1lktsbYI4hIg%3D%3D
 <p>
 These tokens were then fed to <code>bletchley-analyze</code>:
 </p>
-<p><img src="https://code.blindspotsecurity.com/trac/bletchley/export/head/wiki/images/bletchley-analyze.png" /></p>
+<p><img src="../bletchley-analyze.png" /></p>
 <p>
 1. <i>Bletchley's blobtools module currently supports 36 encoding variants,
 including various forms of hexadecimal, base32, base64, and percent
@@ -138,15 +134,4 @@ padding check was successful and False otherwise.  See
 '<code>pydoc3 bletchley.CBC.POA</code>' for more details.
 </p>
 
-<h1>Support</h1>
-<p>
-Having trouble?  Submit an issue <a href="/trac/bletchley/newticket">here</a>, or 
-ask on the <a href="https://groups.google.com/d/forum/bletchley-devel">email list</a>.
-</p>
 
-<h1>Contributing</h1>
-<p>
-We welcome any kind of help with the project, from new tools to bug
-fixes and documentation.  You might want to start with our <a href="/trac/bletchley/browser/trunk/doc/TODO">TODO</a>
-list.  To submit a patch, please post an issue or submit it to the <a href="https://groups.google.com/d/forum/bletchley-devel">email list</a> and we'll merge it.
-</p>
