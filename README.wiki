@@ -22,8 +22,5 @@ As the framework matures, the following additional features are currently antici
 </ul>
 </p>
 <p>
-For more information on the specific tools, see the <a href="https://code.blindspotsecurity.com/trac/bletchley/wiki/Overview">documentation</a>.  Bletchley was created by penetration testers at <a href="http://vsecurity.com/">VSR</a> and is now maintained by <a href="https://blindspotsecurity.com/">Blindspot Security</a>.
-</p>
-<p>
-At the moment, the best way to use Bletchley is to <a href="https://code.blindspotsecurity.com/dav/bletchley">check out the source code</a> and build it from the <code>trunk</code> directory.  For more information, see the <a href="https://code.blindspotsecurity.com/trac/bletchley/browser/trunk/INSTALL">installation instructions</a>.  Note that contributions (patches, testing, <a href="https://code.blindspotsecurity.com/trac/bletchley/newticket">bug reports</a>) are greatly appreciated.
+For more information on the specific tools, see the <a href="https://code.blindspotsecurity.com/trac/bletchley/wiki/Overview">documentation</a>.  Bletchley was created by penetration testers at <a href="http://vsecurity.com/">VSR</a>, at one time was maintained by <a href="https://blindspotsecurity.com/">Blindspot Security</a>, and is now on life support by Greg Alfaro and friends.
 </p>
