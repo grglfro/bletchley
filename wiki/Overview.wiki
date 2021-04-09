@@ -1,6 +1,6 @@
 <h1>Installation</h1>
 <p>
-See: <a href="/trac/bletchley/browser/trunk/INSTALL">INSTALL</a>
+See: <a href="../../README.md">INSTALL</a>
 </p>
 
 <h1>Command Line Tools</h1>
@@ -53,7 +53,7 @@ meU8SyxVHE1lktsbYI4hIg%3D%3D
 <p>
 These tokens were then fed to <code>bletchley-analyze</code>:
 </p>
-<p><img src="../bletchley-analyze.png" /></p>
+<p><img src="../images/bletchley-analyze.png" /></p>
 <p>
 1. <i>Bletchley's blobtools module currently supports 36 encoding variants,
 including various forms of hexadecimal, base32, base64, and percent
